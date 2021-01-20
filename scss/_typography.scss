@@ -1,0 +1,69 @@
+@font-face {
+  font-family: BebasBold;
+  src: url(../fonts/bebas_neue/BebasNeueBold.otf);
+}
+
+@font-face {
+  font-family: BebasBook;
+  src: url(../fonts/bebas_neue/BebasNeueBook.otf);
+}
+
+@font-face {
+  font-family: BebasLight;
+  src: url(../fonts/bebas_neue/BebasNeueLight.otf);
+}
+
+@font-face {
+  font-family: BebasRegular;
+  src: url(../fonts/bebas_neue/BebasNeueRegular.otf);
+}
+
+@font-face {
+  font-family: BebasThin;
+  src: url(../fonts/bebas_neue/BebasNeueThin.otf);
+}
+
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  display: inline-block;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+
+textarea {
+
+}
