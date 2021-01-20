@@ -3,5 +3,5 @@ node_modules
 package-lock.json
 package.json
 pricing.psd
-pricing/css/style.css.map
+app/css/style.css.map
 .DS_Store
