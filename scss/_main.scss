@@ -8,23 +8,22 @@ body {
     .vertical__row {
       display: flex;
       margin: 0 -10px;
+      height: 100vh;
 
       .vertical__column-1,
       .vertical__column-3 {
-        align-self: center;
+        height: 630px;
+      }
+
+      .vertical__column-2 {
+        height: 715px;
       }
 
       .vertical__column {
         flex: 0 1 33.333%;
         padding: 0 10px;
-        margin-top: 160px;
+        align-self: center;
         display: flex;
-
-        .vertical__column-2 {
-        }
-
-        .vertical__column-3 {
-        }
 
         .vertical__item {
           @include center;
@@ -71,19 +70,7 @@ body {
             font-size: 24px;
             letter-spacing: 1px;
             line-height: 36px;
-          }
-
-          .icomoon1,
-          .icomoon3 {
-            margin-bottom: 65px;
-          }
-
-          .icomoon2 {
-            margin-bottom: 75px;
-
-            .ti-paint-bucket {
-              font-size: 24px;
-            }
+            margin-bottom: 20px;
           }
 
           .vertical__border {
@@ -91,18 +78,24 @@ body {
             height: 30%;
             background-color: $itemMainCardColour;
             border-radius: 100% 100% 0 0;
+            .ti-icon {
+              padding-top: 40px;
+              font-size: 40px;
+              font-weight: bold;
+            }
           }
 
           .vertical__list {
             @include left;
-            margin-top: 0;
             background-color: $itemMainCardColour;
             list-style: none;
             font-size: 16px;
             line-height: 53px;
             color: #181818;
             font-weight: 300;
-            padding-bottom: 90px;
+            padding-bottom: 50px;
+            margin-top: -80px;
+            margin-bottom: 0;
           }
 
           a, a:visited {
@@ -111,7 +104,7 @@ body {
 
           .vertical__button {
             display: block;
-            margin: 0px 70px;
+            margin: 0 70px;
             width: 203px;
             height: 54px;
             border-radius: 27px;
@@ -122,11 +115,12 @@ body {
             line-height: 53px;
             color: #ffffff;
             font-weight: 700;
-
+            margin-top: 15px;
           }
 
           .vertical__button--middle {
             background-color: #fd8d7b;
+            margin-top: -25px;
           }
 
           .vertical__discount {
