@@ -17,6 +17,44 @@ body {
 
       .vertical__column-2 {
         height: 715px;
+        position: relative;
+
+        .vertical__circles {
+          position: absolute;
+          right: 10px;
+          top: -23px;
+          height: 88px;
+          width: 76px;
+          display: flex;
+
+          div {
+            border-radius: 50%;
+            background-color: #fd8d7b;
+          }
+
+          div:first-child {
+            height: 45px;
+            width: 45px;
+            align-self: flex-end;
+            text-align: center;
+            line-height: 45px;
+            color: white;
+            font-size: 25px;
+            font-family: 'BebasRegular';
+          }
+
+          div:nth-child(2) {
+            height: 18px;
+            width: 18px;
+            align-self: center;
+          }
+
+          div:last-child {
+            height: 5px;
+            width: 5px;
+            margin-top: 32px;
+          }
+        }
       }
 
       .vertical__column {
@@ -78,6 +116,7 @@ body {
             height: 30%;
             background-color: $itemMainCardColour;
             border-radius: 100% 100% 0 0;
+
             .ti-icon {
               padding-top: 40px;
               font-size: 40px;
