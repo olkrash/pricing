@@ -1,3 +1,9 @@
+/*
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: IE 10,chrome 70,firefox 70
+*/
+
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -402,6 +408,7 @@ body .vertical__body {
   margin: 0 auto;
 }
 body .vertical__body .vertical__row {
+  display: -ms-flexbox;
   display: flex;
   margin: 0 -10px;
   height: 100vh;
@@ -420,6 +427,7 @@ body .vertical__body .vertical__row .vertical__column-2 .vertical__circles {
   top: -23px;
   height: 88px;
   width: 76px;
+  display: -ms-flexbox;
   display: flex;
 }
 body .vertical__body .vertical__row .vertical__column-2 .vertical__circles div {
@@ -429,6 +437,7 @@ body .vertical__body .vertical__row .vertical__column-2 .vertical__circles div {
 body .vertical__body .vertical__row .vertical__column-2 .vertical__circles div:first-child {
   height: 45px;
   width: 45px;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   text-align: center;
   line-height: 45px;
@@ -439,6 +448,8 @@ body .vertical__body .vertical__row .vertical__column-2 .vertical__circles div:f
 body .vertical__body .vertical__row .vertical__column-2 .vertical__circles div:nth-child(2) {
   height: 18px;
   width: 18px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
 }
 body .vertical__body .vertical__row .vertical__column-2 .vertical__circles div:last-child {
@@ -447,9 +458,12 @@ body .vertical__body .vertical__row .vertical__column-2 .vertical__circles div:l
   margin-top: 32px;
 }
 body .vertical__body .vertical__row .vertical__column {
+  -ms-flex: 0 1 33.333%;
   flex: 0 1 33.333%;
   padding: 0 10px;
+  -ms-flex-item-align: center;
   align-self: center;
+  display: -ms-flexbox;
   display: flex;
 }
 body .vertical__body .vertical__row .vertical__column .vertical__item {
@@ -462,7 +476,9 @@ body .vertical__body .vertical__row .vertical__column .vertical__item .vertical_
   font-family: BebasThin;
 }
 body .vertical__body .vertical__row .vertical__column .vertical__item .vertical__rate {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-top: 50px;
   margin-bottom: 20px;
@@ -472,6 +488,7 @@ body .vertical__body .vertical__row .vertical__column .vertical__item .vertical_
   font-size: 24px;
   letter-spacing: 2px;
   line-height: 36px;
+  -ms-flex-item-align: start;
   align-self: flex-start;
 }
 body .vertical__body .vertical__row .vertical__column .vertical__item .vertical__rate .vertical__price {
@@ -484,6 +501,8 @@ body .vertical__body .vertical__row .vertical__column .vertical__item .vertical_
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 36px;
+  -ms-flex-item-align: self-end;
+  -ms-grid-row-align: self-end;
   align-self: self-end;
 }
 body .vertical__body .vertical__row .vertical__column .vertical__item .vertical__desc {
@@ -548,5 +567,3 @@ body .vertical__body .vertical__row .vertical__column .vertical__item .vertical_
   max-height: 60px;
   color: #f5f4f9;
 }
-
-/*# sourceMappingURL=style.css.map */
